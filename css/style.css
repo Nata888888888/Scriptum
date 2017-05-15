@@ -1,0 +1,519 @@
+body {
+    background-color: #f3f3f3;
+}
+.header{
+    background-position: center; 
+    background-image: url(../image/scriptum.png);
+    max-width: 1850px;
+    height: 1010px;
+    margin: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header_topMenu{
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 26px 0 26px;
+}
+/*
+.title{
+    margin:auto;
+    max-width: 895px;
+    height: 326px;
+    margin-top: 273px;
+    background-image: url(../image/title1.png);
+    background-position: center; 
+    
+}
+*/
+
+.about,.works, .web, .skills, .news, .quotes, .contact, .footer{
+    background: #f3f3f3; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #f3f3f3, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(90deg, #f3f3f3, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #f3f3f3, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(90deg, #f3f3f3, white); /* Standard syntax (must be last) */
+    max-width: 1850px;
+    margin: auto;
+    padding-top: 133px;
+    padding-bottom: 133px;
+    margin-bottom: 35px;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    padding-top: 113px;
+/*
+    height: 960px;
+    width: 1439px;
+*/
+}
+.about_img{
+    background-image: url(../image/pictureabout.png);
+    height: 452px;
+    width: 678px; 
+    margin-right: 46px;
+    margin-left: 16px;
+    margin-top: 17px;
+}
+.about_info{
+    max-width: 564px;
+    min-width: 564px;
+    padding-top: 23px;
+}
+.about_info_title{
+    font:  45px Baron Neue;
+    text-shadow: 2px 1px 1px #333333;
+    letter-spacing: 2px;
+}
+.about_info_title_description{
+    font: 15px Arial;
+    letter-spacing: 2.1px;
+    line-height: 1.55;
+    padding-top: 14px;
+    padding-left: 4px;
+    padding-bottom: 27px;
+}
+.about_info_link{
+    font: 13px Baron Neue;
+    color:black;
+/*    text-shadow: 2px 2px 3px #333333; */
+    letter-spacing: 2px;
+    text-decoration: none;
+    
+}
+.works{  
+    padding-top: 113px;
+    padding-bottom: 113px;
+}
+.works_title{
+    text-align: center;
+    font: 36px Baron Neue;
+    letter-spacing: 4px;
+    margin-top: 13px;
+    
+}
+.works ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: 37px;
+    font: 12px Baron Neue;
+/*    overflow: hidden;*/
+}
+.works ul li{display: inline-block;}
+.works ul li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+.works_portfolio{
+    width: 1270px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 28px;
+}
+/*
+.about_img{
+    background-image: url(../image/pictureabout.png);
+    max-width: 400px;
+    height: 300px;
+}
+*/
+.works_portfolio img{
+    margin: 12px;
+}
+.web{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.web_photo{
+    background-image: url(../image/webpicture.png);
+    width: 746px;
+    height: 122px;
+/*
+    width: 836px;
+    height: 804px;
+*/
+    padding-top: 341px;
+    padding-bottom: 341px;
+    padding-left: 89px;
+    padding-right: 89px;
+}
+.border1{
+    border: 3px solid white;
+    width: 741px;
+    height: 112px;
+/*
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+*/
+}
+.border2{
+    border: 3px solid white;
+    width: 741px;
+    height: 112px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.web_photo_title{
+    color:white;
+    font-size: 65px;
+    font-family:Baron Neue;
+    margin-left: 21px;
+    margin-top: 5px;
+    letter-spacing: 4.5px;
+    box-sizing: border-box;
+}
+.web_icons{
+/*    width: 745px;*/
+    margin-right: 162px;
+    height: 523px;
+    display: flex;
+    flex-wrap: wrap;
+/*    margin-left: 10px;*/
+    margin-top: 154px;
+    margin-bottom: 117px;
+/*    margin-right: 230px;*/
+}
+.web_icons_item1_desc{
+    margin-top: 30px;
+   letter-spacing: 2px;
+/*    padding-right: 50px;*/
+    width: 150px;
+   
+}
+.web_icons_item1, .web_icons_item2{ margin-right: 162px;}
+.web_icons_item1,.web_icons_item2, .web_icons_item3, .web_icons_item4, .web_icons_item5, .web_icons_item6, /*.web_icons_item1_desc*/{
+    font:14px Baron Neue;
+    margin-bottom: 41px;
+/*        padding-right: 55px;*/
+/*     margin-left: 65px;*/
+    margin-right: 162px;
+/*    margin-right: 60px;*/
+    
+}
+.c1, .c2, .c3, .c4{
+    font: 15px Arial;
+    letter-spacing: 3.1px;
+    line-height: 24px;
+}
+.article{
+    display: flex;
+   justify-content: space-around;
+    height: 400px;
+    width: 1148px;
+    height: 553px;
+    margin: auto;
+ 
+    margin-top: 172px;
+    margin-bottom: 120px;
+}
+.article p{
+    font: 15px Arial;
+    letter-spacing: 2px;
+    line-height: 24px;
+}
+.article_item1, .article_item2, .article_item3, .article_item4{
+    width:425px;
+    height: 211px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 26px;
+}
+.article_item1_photo{
+        margin-top: 58px;
+}
+.article_item1_description{
+    margin-top: 42px;
+    margin-left: 28px;
+}
+.article_item1_title{
+    font: 14px  Baron Neue;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    
+}
+.article_item2_photo{
+    margin-top: 31px;   
+}
+.article_item2_title, .article_item3_title, .article_item4_title{
+    font: 14px  Baron Neue;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+.article_item2_description{
+       margin-top: 0px;
+    margin-left: 28px;
+}
+.c1, .c2{
+    margin-top: 4px;
+    line-height: 24px;
+}
+.c4, .c3{
+        margin-top: 5px;
+     line-height: 24px;
+}
+.article_item3, .article_item4{
+    text-align: right;
+    
+    
+}
+.article_item3{
+    margin-top: 42px;
+        margin-bottom: 5px;
+}
+.article_item3_photo{
+        margin-top: 35px;
+        margin-right: 13px;
+}
+.article_item3_description{
+/*    margin-top: 42px;*/
+    margin-right: 25px;
+/*    margin-left: 28px;*/
+}
+.article_item4_description{
+        margin-right: 22px;
+}
+.article_item4_photo{
+        margin-top: 16px;
+        margin-right: 13px;
+}
+.skills{
+    padding-top: 80px;
+    height: 505px;
+}
+.skills_title{ 
+     text-align: center;
+    font-size: 45px;
+    font-family: Baron Neue;
+    letter-spacing: 2px;
+}
+.skills_description{
+    width: 1270px;
+    margin: auto;
+    margin-top: 77px;
+    font-size: 14px;
+    font-family: Baron Neue;
+    letter-spacing: 2px;
+}
+.skills_description_item{
+    width: 1270px;
+    height: 35px;
+    margin-top: 30px;
+    margin-bottom: 53px;
+    background-color: #f3f3f3;
+}
+.news{
+        padding-top: 79px;
+}
+.news_title{
+    text-align: center;
+    font-size: 45px;
+    font-family: Baron Neue;
+}
+.news_articles{
+    display: flex;
+    justify-content: center;
+   margin-bottom: 0px;
+    margin-top: 67px;
+    letter-spacing: 1.3px;
+}
+.articles{
+    width: 407px;
+    margin-top: 0px;
+/*    margin-left: 12px;*/
+    margin-right: 23px;
+}
+.pencil{
+/*    margin-right: 10px;*/
+    margin-right: 0;
+}
+.author{
+/*    margin-right: 41px;*/
+    margin-right:27px;
+}
+.calendar{margin-right: 10px;
+    
+}
+.news_articles h6{
+    font: 14px Baron Neue;
+        margin-bottom: -5px;
+    margin-top: 15px;
+    letter-spacing: 1.9px;
+}
+f1 p{
+    font:14px Arial;
+}
+.l{
+    font: 13px Baron Neue;
+    margin-top: 34px;
+  
+}
+.f1{
+    margin: 14px;
+/*    margin-left: 139px;*/
+    
+}
+.f{
+    font:13px Arial;
+    color:slategray;
+    margin: 0;
+    margin-top: 12px;
+}
+.quotes{
+    background-image: url(../image/quotesbg.png);
+    display: flex;
+    justify-content: center;
+    padding-top:0;
+    padding-bottom:0;
+}
+.quotes_asideleft{
+    padding-left: 40px;
+      display: flex;
+    flex-direction: column;
+    
+}
+.quotes_slider{
+    font: 21px Arial;
+    font-weight: bold;
+    line-height: 29px;
+    text-align: center;
+/*    padding-top: 171px;*/
+    padding-top: 0;
+  padding-left: 87px;
+    padding-right: 326px;
+/*    width: 881px;*/
+    width: 476px;
+    margin: auto;
+    margin-top: 64px;
+}
+.quote{
+/*     background-image: url(../image/quote.svg);*/
+    background-image: url(../image/write42.png);
+    background-repeat: no-repeat;
+    margin-left: 408px;
+    margin-top: 225px;
+    width: 50px;
+    height: 50px;
+    
+}
+.quotes_button{
+    margin-top: 200px;
+    margin: auto;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.quotes_button_1{
+    width: 5px;
+    height: 5px;
+    background-color: black;
+}
+.quotes_button_2, .quotes_button_3, .quotes_button_4{
+    width: 5px;
+    height: 5px;
+    background-color: gray;
+}
+    
+
+.quotes_picture{
+    background-image: url(../image/quotespicture.png);
+/*
+    width: 1414px;
+    height: 791px;
+*/
+    width: 1012px;
+    height: 796px;
+}
+.quotes_picture_border1{
+    width: 613px;
+    height: 611px;
+    margin-left: 142px;
+    margin-top: 82px;
+    border:3px solid white;
+}
+.quotes_picture_border2{
+    width: 613px;
+    height: 611px;
+    border:3px solid white;
+    margin-top: 10px;
+    margin-left:10px; 
+}
+.title{
+     text-align: center;
+    font-size: 65px;
+    font-family: Baron Neue;
+    color:white;
+    width: 530px;
+    line-height: 85px;
+    letter-spacing: 5px;
+    padding-top: 171px;
+    padding-left: 40px;
+}
+.contact{    
+    padding-top: 82px;
+}
+.contact_title{
+    text-align: center;
+    font: 45px Baron Neue;
+     letter-spacing: 2px;
+      
+}
+.contact_form{
+    width: 960.00px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 125px;
+}
+.name, .surname{
+    width: 418px;
+   
+/*    height:*/
+}
+.contact_form_fname{
+    display: flex;
+    justify-content: space-between;
+    width: 917px;
+    margin-bottom: 38px;
+}
+.name{ 
+    margin-right: 31px;
+   
+}
+input, textarea{
+    background-color: rgb(239,239,239);
+    border:none;
+    
+    padding: 25px;
+ }
+.mail, .message{
+    width: 910px;
+    margin-bottom: 38px;
+/*    padding: 25px;*/
+}
+.footer{
+  
+        padding-top: 53px;
+    padding-bottom: 22px;
+   
+}
+.footer_content{
+    margin: auto;
+    width: 1200px; 
+      display: flex;
+    justify-content: space-between;
+}
+.footer_asideleft{
+    font: 14px Arial;
+}
