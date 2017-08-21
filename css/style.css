@@ -571,6 +571,7 @@ body {
      background-color: black;
 }
 */
+/*
 .animation {
     color:white;
     text-align: right;
@@ -578,9 +579,7 @@ body {
     height: 100%;
     background: black;
     -webkit-animation-name: example;
-    /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 4s;
-    /* Safari 4.0 - 8.0 */
     animation-name: example;
     animation-duration: 4s;
     animation-play-state: paused;
@@ -594,10 +593,12 @@ body {
         width: 100%;
     }
 }
+
 .animation:hover {
-    /*    width:65%;*/
+        width:65%;
     animation-play-state: running;
 }
+*/
 .news {
     padding-top: 79px;
     padding-bottom: 120px;
