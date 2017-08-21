@@ -176,6 +176,9 @@ body {
     margin-bottom: 25px;
     display: block;
 }
+#grid img{
+    width: 100%;
+}
 .web {
     display: flex;
     justify-content: center;
@@ -204,189 +207,75 @@ body {
     width: 81%;
     height: 14%;
 }
-
 .border2 {
-
     border: 3px solid white;
-
     width: 101%;
-
     height: 106%;
-
-    /*
-    width: 741px;
-    height: 110px;
-*/
-
     margin-top: 5px;
-
     margin-left: 5px;
-
 }
-
 .web_photo_title {
-
     color: white;
-
-    /*    font-size: 4.0625em;*/
-
     font-size: 406.25%;
-
     font-family: Baron Neue;
-
-    /*    margin-left: 26px;*/
-
     text-align: center;
-
-    /*    margin-top: 5px;*/
-
-    /*    letter-spacing: 0.28125em;*/
-
     letter-spacing: 4.5px;
-
     box-sizing: border-box;
-
 }
-
 .web_photo_title span {
-
     vertical-align: middle;
-
 }
-
 .web_icons {
-
     width: 50%;
-
     margin: auto;
-
-    /*    width: 745px;*/
-
-    /*    margin-right: 162px;*/
-
-    /*    height: 523px;*/
-
-    /*
-    display: flex;
-    flex-wrap: wrap;
-*/
-
-    /*    margin-left: 10px;*/
-
     margin-top: 103px;
-
     margin-bottom: 117px;
-
-    /*    margin-right: 230px;*/
-
 }
-
 .web_icons_group {
-
     margin: auto;
-
     max-width: 629px;
-
-    /*    height: 500px;*/
-
     display: -webkit-flex;
-
-    /* Safari */
-
     -webkit-flex-wrap: wrap;
-
     display: flex;
-
     flex-wrap: wrap;
-
     justify-content: space-around;
-
-    /*
-      margin-left: 269px;
-      margin-right: 269px;
-*/
-
 }
-
 .web_icon_item {
-
     text-align: center;
-
     font: 0.875em Baron Neue;
-
     margin-bottom: 41px;
-
     width: 240px;
-
 }
-
 .web_icons_item1_desc {
-
     text-shadow: 4px 8px 20px #acacac;
-
     margin-top: 30px;
-
     letter-spacing: 0.14125em;
-
-    /*    padding-right: 50px;*/
-
-    /*    width: 150px;*/
-
 }
-
 .web_icons_item1 {
-
     margin-top: 36px;
-
-    /*    padding-left: 9px;*/
-
-    /*    margin-left: 260px;*/
-
-    /*    margin-right: 154px;*/
-
 }
-
 .web_icons_item1_desc {
-
-    /*    padding-left: 3px;*/
-
 }
-
 .web_icons_item2 {
-
     margin-top: 42px;
-
 }
-
 .web_icons_item2 img {
-
-    /*    padding-left: 7px;*/
-
 }
-
 .web_icons_item2_desc {
-
     text-shadow: 4px 8px 20px #acacac;
-
     margin-top: 30px;
-
     letter-spacing: 0.11875em;
-
 }
-
 .web_icons_item3 {
     margin-top: 42px;
 }
-
 .web_icons_item3 img {
 }
-
 .web_icons_item3_desc {
     text-shadow: 4px 8px 20px #acacac;
     margin-top: 24px;
     letter-spacing: 0.1em;
 }
-
 .web_icons_item4 {
     margin-top: 42px;
 }
@@ -525,10 +414,6 @@ body {
 .skills {
     padding-top: 83px;
     padding-bottom: 90px;
-    /*
-    padding-bottom: 131px;
-    height: 505px;
-*/
 }
 .skills_title {
     text-shadow: 4px 8px 20px #acacac;
@@ -540,23 +425,28 @@ body {
 }
 .skills_description {
     text-shadow: 4px 8px 20px #acacac;
-    /*    width: 1270px;*/
     width: 90%;
-    /*    max-width: 1270px;*/
     margin: auto;
     margin-top: 77px;
     font-size: 14px;
     font-family: Baron Neue;
     letter-spacing: 0.100625em;
-    /*    padding-left: 2px;*/
 }
 .skills_description_item {
-    /*    width: 1270px;*/
     max-width: 1270px;
     height: 35px;
     margin-top: 34px;
     margin-bottom: 46px;
     background-color: #f3f3f3;
+}
+#design_bar, #js_bar, #css_bar{
+    text-align: right;
+    width: 2%;
+    height: 100%;
+    background: black;
+    color: white;
+    line-height: 30px;
+    padding-right: 2%;
 }
 /*.skills_description_item:after{
     width: 50px;
@@ -623,15 +513,12 @@ body {
 .articles {
     width: 407px;
     margin-top: 0px;
-    /*    margin-left: 12px;*/
     margin-right: 23px;
 }
 .pencil {
-    /*    margin-right: 10px;*/
     margin-right: 0;
 }
 .author {
-    /*    margin-right: 41px;*/
     margin-right: 27px;
     margin-left: 3px;
     letter-spacing: 0.1125em;
@@ -838,8 +725,8 @@ body {
     letter-spacing: 2.4px;
 }
 .contact_form {
-    max-width: 960.00px;
-/*    width: 100%;*/
+/*    max-width: 960.00px;*/
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -1010,8 +897,8 @@ textarea:-ms-text-placeholder {
     display: flex;
     flex-wrap: wrap;
     } 
-    	#grid[data-columns]::before {
-		content: '2 .column.size-1of2';
+    #grid[data-columns]::before {
+    content: '2 .column.size-1of2';
 	}
 }
 @media screen and (max-width: 480px){

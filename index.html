@@ -69,28 +69,21 @@
                 </ul>
                 <div class="works_portfolio">
                     <div id="grid" data-columns> 
-                       <div class="column size-1of3">                  
-                            <div><img src="image/work1-1.png" alt=""></div>
-                            <div><img src="image/work2-1.png" alt=""></div>
-                            <div><img src="image/work3-1.png" alt=""></div>
-                       </div>
-                       <div class="column size-1of3">
-                           <div><img src="image/work1-2.png" alt=""></div>
-                           <div><img src="image/work2-2.png" alt=""></div>
-                           <div><img src="image/work3-2.png" alt=""></div>
-                       </div>
-                       <div class="column size-1of3">
-                            <div><img src="image/work1-3.png" alt=""></div>
-                            <div><img src="image/work3-3.png" alt=""></div>
-                        </div>
+                        <div><img src="image/work1-1.png" alt="winter"></div>
+                        <div><img src="image/work1-2.png" alt="forest"></div>
+                        <div><img src="image/work1-3.png" alt="montain"></div>
+                        <div><img src="image/work2-1.png" alt="lake"></div>
+                        <div><img src="image/work2-2.png" alt="river"></div>
+                        <div><img src="image/work3-3.png" alt="river"></div>
+                        <div><img src="image/work3-1.png" alt="snow" ></div>
+                        <div><img src="image/work3-2.png" alt="tree" ></div>
                     </div>  
                 </div> 
             </section>
 
             <section class="web">
-
-                             <div class="web_photo">
-                                        <img src="image/webpicture.png" alt="">
+                <div class="web_photo">
+                    <img src="image/webpicture.png" alt="">
                     <div class="border1">
                         <div class="border2">
                             <div class="web_photo_title"><span>Web Development</span></div>
@@ -99,7 +92,6 @@
                 </div>
                 <div class="web_icons">
                     <div class="web_icons_group">
-       
                         <div class="web_icon_item web_icons_item1">
                             <img src="image/Design.svg" alt="design">
                             <div class="web_icons_item1_desc">Design</div>
@@ -126,23 +118,22 @@
                         </div>
                     </div>
                 </div>
-              
             </section>
-            <section class="skills">
+            <section class="skills" id="skills">
                 <a name="skills"></a>
                 <h1 class="skills_title">Skills</h1>
                 <div class="skills_description">
                     <p>Design</p>
-                    <div class="skills_description_item">
-                        <div class="animation"></div>
+                    <div class="skills_description_item" id="design">
+                        <div class="animation" id="design_bar">1%</div>
                     </div>
                     <p>Css3</p>
-                    <div class="skills_description_item">
-                        <div class="animation"></div>
+                    <div class="skills_description_item" id="css">
+                        <div class="animation" id="css_bar">1%</div>
                     </div>
                     <p>JavaScript</p>
-                    <div class="skills_description_item">
-                        <div class="animation" id="myBar">1%</div>
+                    <div class="skills_description_item" id="js">
+                        <div class="animation" id="js_bar">1%</div>
                     </div>
                 </div>
             </section>
@@ -321,10 +312,10 @@
                             </div>
                         </div>
                         <div class="mail">
-                            <input type="text" name="email" class="email" placeholder="*Email" required style="width:915px;">
+                            <input type="text" name="email" class="email" placeholder="*Email" required >
                         </div>
                         <div class="message">
-                            <textarea name="message" id="" cols="30" rows="10" placeholder="Message" required style="width:915px; height:310px"></textarea>
+                            <textarea name="message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
                         </div>
                         <div class="button">
                             <input class="button_submit" type="submit" value="Send">
@@ -370,46 +361,14 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
         <script src="javaScript/JavaScript.js"></script>
         <script src="javaScript/jquery.fittext.js"></script>
-<!--
-        <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
--->
         <script type="text/javascript">
             $(".web_photo_title").fitText(1.4);
 //            $("#fittext2").fitText(1.2);
 //            $("#fittext3").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
         </script>
     <script src="javaScript/salvattore.min.js"></script>
-    <script>
-        var grid = document.querySelector('#grid');
-        var item = document.createElement('article');
-        salvattore.appendElements(grid, [item]);
-//        item.outerHTML = 'I’ve been appended!';
-    </script>
-    <script>function move() {
-    var elem = document.getElementById("myBar"); 
-    var width = 10;
-    var id = setInterval(frame, 10);
-    function frame() {
-        if (width >= 100) {
-            clearInterval(id);
-        } else {
-            width++; 
-            elem.style.width = width + '%'; 
-            elem.innerHTML = width * 1 + '%';
-//            position: absolute;
-//		left: calc(50vw - 4px - #{$barW} / 2);
-//		top: calc(50vh - 4px - #{$barH} / 2);
-        }
-    }
-            $(function(){
-                if($('.skills').offsetTop>0){
-                    move();
-                }
-            });
-}</script>
+    <script src="javaScript/progress_bar.js"></script>
+    
 
 </body>
 
