@@ -1,0 +1,29 @@
+/*
+@media only screen and (max-width: 800px) {
+     For tablets: 
+    body{
+        font-size: 8px;
+    }
+}
+*/
+@media only screen and (min-width:961px){
+    
+}
+@media only screen and/* (min-width:769px) and */(max-width: 960px) {
+    
+}
+@media screen and /*(min-width:480px) and */(max-width: 768px) {
+    .header_topMenu_logo img {
+        width:50%;
+    }
+      .header_topMenu_menu img{
+        width:50%;
+          float: right;
+    }
+}
+@media only screen and /*(min-width:320px) and */(max-width: 479px) {
+   
+}
+@media only screen and (max-width: 319px) {
+    
+}

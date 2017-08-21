@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Scriptum</title>
     <meta name="description" content="Scriptum Web">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/desktop.css" media="only screen and      (max-width:960px)">
+    <link rel="stylesheet" href="css/tablrt.csst.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         @font-face{
-
-font-family:Baron Neue;
-        src:url(fonts/Baron Neue.otf);
-    }
+            font-family:Baron Neue;
+            src:url(fonts/Baron Neue.otf);
+        }
     </style>
 </head>
-
 <body>
     <div class="container">
         <header class="header">
+            <img class="header_bg" src="image/headertitle.png" alt="scriptum">
             <div class="header_topMenu">
                 <div class="header_topMenu_logo">
                     <img src="image/logo.png" alt="logo">
                 </div>
-
                 <div class="header_topMenu_menu">
-                    <img src="image/menu.png" alt="menu">
+                    <img class="dropdown" src="image/menu.png" alt="menu">
+                    <div class="dropdown_content">
+                        <a href="#about">About us</a>
+                        <a href="#works">Works</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#news">News</a>
+                        <a href="#contact">Contact us</a>
+                    </div>
                 </div>
             </div>
-            <!--
-            <div class="title">
-                <img src="image/title1.png" alt="scriptum">
-            </div>
--->
-
         </header>
         <main>
 
             <section class="about">
-                <div class="about_img">
-
+                <div class="about_img clear">
+                    <img class="about_img_img clear" src="image/pictureabout.png" alt="About us" width=100%>
                 </div>
                 <div class="about_info">
+                    <a name="about"></a>
                     <h1 class="about_info_title">About Scriptum</h1>
                     <p class="about_info_title_description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, con-tent here', making it look like readable English. Many desktop publishing packages and web page editors.
-
                     </p>
                     <a href="#" class="about_info_link">Learn more</a>
                 </div>
             </section>
 
             <section class="works">
+                <a name="works"></a>
                 <h1 class="works_title">Works</h1> 
                 <ul class="works_menu">
                     <li><a href="ALL">All</a>
@@ -66,81 +68,86 @@ font-family:Baron Neue;
                     </li>
                 </ul>
                 <div class="works_portfolio">
-                    <div class="works_portfolio_col1">
-                        <img src="image/work1-1.png" alt="">
-                        <img src="image/work2-1.png" alt="">
-                        <img src="image/work3-1.png" alt="">
-                    </div>
-                    <div class="works_portfolio_col2">
-                        <img src="image/work1-2.png" alt="">
-                        <img src="image/work2-2.png" alt="">
-                        <img src="image/work3-2.png" alt="">
-                    </div>
-                    <div class="works_portfolio_col3">
-                        <img src="image/work1-3.png" alt="">
-                        <img src="image/work3-3.png" alt="">
-                    </div>
-                </div>
+                    <div id="grid" data-columns> 
+                       <div class="column size-1of3">                  
+                            <div><img src="image/work1-1.png" alt=""></div>
+                            <div><img src="image/work2-1.png" alt=""></div>
+                            <div><img src="image/work3-1.png" alt=""></div>
+                       </div>
+                       <div class="column size-1of3">
+                           <div><img src="image/work1-2.png" alt=""></div>
+                           <div><img src="image/work2-2.png" alt=""></div>
+                           <div><img src="image/work3-2.png" alt=""></div>
+                       </div>
+                       <div class="column size-1of3">
+                            <div><img src="image/work1-3.png" alt=""></div>
+                            <div><img src="image/work3-3.png" alt=""></div>
+                        </div>
+                    </div>  
+                </div> 
             </section>
 
             <section class="web">
-<!--                <div class="web_main">-->
-                    <div class="web_photo">
-                        <!--                    <img src="image/web.png" alt="">-->
-                        <div class="border1">
-                            <div class="border2">
-                                <div class="web_photo_title">Web Development</div>
-                            </div>
+
+                             <div class="web_photo">
+                                        <img src="image/webpicture.png" alt="">
+                    <div class="border1">
+                        <div class="border2">
+                            <div class="web_photo_title"><span>Web Development</span></div>
                         </div>
                     </div>
-                    <div class="web_icons">
-                        <div class="web_icons_group">
-<!--
-                            <div class="web_icons_item1">
-                                <img src="image/Design.svg" alt="design">
-                                <div class="web_icons_item1_desc">Design</div>
-                            </div>
--->
-                            <div class="web_icon_item web_icons_item1">
-                                <img src="image/Design.svg" alt="design">
-                                <div class="web_icons_item1_desc">Design</div>
-                            </div>
-                            <div class="web_icon_item web_icons_item2">
-                                <img src="image/nightwork.svg" alt="Night work">
-                                <div class="web_icons_item2_desc">Night work</div>
-                            </div>
-                            <div class="web_icon_item web_icons_item3">
-                                <img src="image/comunication.svg" alt="Communication">
-                                <div class="web_icons_item3_desc">Communication</div>
-                            </div>
-                            <div class="web_icon_item web_icons_item4">
-                                <img src="image/safety.svg" alt="Safety">
-                                <div class="web_icons_item4_desc">Safety</div>
-                            </div>
-                            <div class="web_icon_item web_icons_item5">
-                                <img src="image/Compas.svg" alt="Coordination">
-                                <div class="web_icons_item5_desc">Coordination</div>
-                            </div>
-                            <div class="web_icon_item web_icons_item6">
-                                <img src="image/development.svg" alt="Development">
-                                <div class="web_icons_item6_desc">Development</div>
-                            </div>
+                </div>
+                <div class="web_icons">
+                    <div class="web_icons_group">
+       
+                        <div class="web_icon_item web_icons_item1">
+                            <img src="image/Design.svg" alt="design">
+                            <div class="web_icons_item1_desc">Design</div>
+                        </div>
+                        <div class="web_icon_item web_icons_item2">
+                            <img src="image/nightwork.svg" alt="Night work">
+                            <div class="web_icons_item2_desc">Night work</div>
+                        </div>
+                        <div class="web_icon_item web_icons_item3">
+                            <img src="image/comunication.svg" alt="Communication">
+                            <div class="web_icons_item3_desc">Communication</div>
+                        </div>
+                        <div class="web_icon_item web_icons_item4">
+                            <img src="image/safety.svg" alt="Safety">
+                            <div class="web_icons_item4_desc">Safety</div>
+                        </div>
+                        <div class="web_icon_item web_icons_item5">
+                            <img src="image/Compas.svg" alt="Coordination">
+                            <div class="web_icons_item5_desc">Coordination</div>
+                        </div>
+                        <div class="web_icon_item web_icons_item6">
+                            <img src="image/development.svg" alt="Development">
+                            <div class="web_icons_item6_desc">Development</div>
                         </div>
                     </div>
-<!--                </div>-->
+                </div>
+              
             </section>
             <section class="skills">
+                <a name="skills"></a>
                 <h1 class="skills_title">Skills</h1>
                 <div class="skills_description">
                     <p>Design</p>
-                    <div class="skills_description_item"></div>
+                    <div class="skills_description_item">
+                        <div class="animation"></div>
+                    </div>
                     <p>Css3</p>
-                    <div class="skills_description_item"></div>
+                    <div class="skills_description_item">
+                        <div class="animation"></div>
+                    </div>
                     <p>JavaScript</p>
-                    <div class="skills_description_item"></div>
+                    <div class="skills_description_item">
+                        <div class="animation" id="myBar">1%</div>
+                    </div>
                 </div>
             </section>
             <section class="article">
+               <div class="wrap">
                 <div class="colum1">
                     <div class="article_item1">
 
@@ -170,7 +177,7 @@ font-family:Baron Neue;
                 <div class="phone">
                     <img src="image/iPhone%205S%20Black.png" alt="Phone">
                 </div>
-                <div>
+                <div class="column3">
 
                     <div class="article_item3">
                         <div class="article_item3_description">
@@ -195,10 +202,13 @@ font-family:Baron Neue;
                         </div>
                     </div>
                 </div>
+                </div>
             </section>
 
             <section class="news">
+                <a name="news"></a>
                 <h1 class="news_title">News</h1>
+
                 <div class="news_articles">
                     <article class="articles">
                         <figure class="f1">
@@ -212,7 +222,7 @@ font-family:Baron Neue;
                             <h6 class="titl" font=14px Baron Neue;>Maecenas consequat turpis at ante</h6>
                             <p class="p">It is a long established fact that a reader will be distracted.</p>
                             <div>
-                                <p class="l">Learn more</p>
+                                <a href="#" class="l">Learn more</a> 
                             </div>
                         </figure>
                     </article>
@@ -229,7 +239,7 @@ font-family:Baron Neue;
                             <h6 font=14px Baron Neue;>Maecenas consequat turpis at ante</h6>
                             <p class="p">It is a long established fact that a reader will be distracted.</p>
                             <div>
-                                <p class="l">Learn more</p>
+                                <a href="#" class="l">Learn more</a>
                             </div>
                         </figure>
                     </article>
@@ -246,7 +256,7 @@ font-family:Baron Neue;
                             <h6 font=14px Baron Neue;>Maecenas consequat turpis at ante</h6>
                             <p class="p">It is a long established fact that a reader will be distracted.</p>
                             <div>
-                                <p class="l">Learn more</p>
+                                <a href="#" class="l">Learn more</a>
                             </div>
 
                         </figure>
@@ -298,6 +308,7 @@ font-family:Baron Neue;
             </section>
 
             <section class="contact">
+                <a name="contact"></a>
                 <h1 class="contact_title">Contact us</h1>
                 <div class="contact_form">
                     <form action="send.php" method="post">
@@ -310,7 +321,7 @@ font-family:Baron Neue;
                             </div>
                         </div>
                         <div class="mail">
-                            <input type="text" name="email" placeholder="*Email" required style="width:915px;">
+                            <input type="text" name="email" class="email" placeholder="*Email" required style="width:915px;">
                         </div>
                         <div class="message">
                             <textarea name="message" id="" cols="30" rows="10" placeholder="Message" required style="width:915px; height:310px"></textarea>
@@ -327,26 +338,73 @@ font-family:Baron Neue;
             <div class="footer_content">
                 <div class="footer_asideleft">
                     <div class="social">
-                        <div class="twiter">
-                            <!--            <img src="image/socials.png" alt="social">-->
-                        </div>
-                        <div class="facebook">
-                            <!--           <img src="image/socials.png" alt="social">-->
-                        </div>
-                        <div class="be">
-                            <!--            <img src="image/socials.png" alt="social">-->
-                        </div>
+                        <a href="twitter.com" target="_blank" title="twitter">
+                            <div class="twiter">
+
+                                <!--            <img src="image/socials.png" alt="social">-->
+                            </div>
+                        </a>
+                        <a href="facebook.com" arget="_blank" title="facebook">
+                            <div class="facebook">
+
+                                <!--           <img src="image/socials.png" alt="social">-->
+                            </div>
+                        </a>
+                        <a href="behance.net" target="_blank" title="behance">
+                            <div class="be">
+
+                                <!--            <img src="image/socials.png" alt="social">-->
+                            </div>
+                        </a>
                     </div>
                     <div class="design">Designed by - 2017 &#169;</div>
                 </div>
-                <div class="footer_asideright">
-                    <img src="image/up.png" alt="up">
+                <a href="#">
+                    <div class="footer_asideright">
+                        <img src="image/up.png" alt="up">
+                </a>
                 </div>
             </div>
         </footer>
-
-        </div>
+         </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
         <script src="javaScript/JavaScript.js"></script>
+        <script src="javaScript/jquery.fittext.js"></script>
+<!--
+        <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+-->
+        <script type="text/javascript">
+            $(".web_photo_title").fitText(1.4);
+//            $("#fittext2").fitText(1.2);
+//            $("#fittext3").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
+        </script>
+    <script src="javaScript/salvattore.min.js"></script>
+    <script>
+        var grid = document.querySelector('#grid');
+        var item = document.createElement('article');
+        salvattore.appendElements(grid, [item]);
+//        item.outerHTML = 'I’ve been appended!';
+    </script>
+    <script>function move() {
+    var elem = document.getElementById("myBar"); 
+    var width = 10;
+    var id = setInterval(frame, 10);
+    function frame() {
+        if (width >= 100) {
+            clearInterval(id);
+        } else {
+            width++; 
+            elem.style.width = width + '%'; 
+            elem.innerHTML = width * 1 + '%';
+//            position: absolute;
+//		left: calc(50vw - 4px - #{$barW} / 2);
+//		top: calc(50vh - 4px - #{$barH} / 2);
+        }
+    }
+}</script>
 
 </body>
 
